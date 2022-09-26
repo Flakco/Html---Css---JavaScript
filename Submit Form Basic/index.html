@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Company Name Job Application Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for your interest in joining our company.
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <select id="dropdown" name="role" class="form-control-option" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend our company to a friend?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Definitely</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Where did you find us?</p>
+          <select id="most-like" name="mostLike" class="form-control-option" required>
+            <option disabled selected value>Select an option</option>
+            <option value="linkedin">Linkedin</option>
+            <option value="instagram">Instagram</option>
+            <option value="facebook">Facebook</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What position are you applying for?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="front-end"
+              type="checkbox"
+              class="input-checkbox"
+            />Front-end Developer</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="back-end"
+              type="checkbox"
+              class="input-checkbox"
+            />Back-end Developer</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="graphic-design"
+              type="checkbox"
+              class="input-checkbox"
+            />Graphic Designer</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="accountant"
+              type="checkbox"
+              class="input-checkbox"
+            />Accountant</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="human-resources"
+              type="checkbox"
+              class="input-checkbox"
+            />Human Resources</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="assistant"
+              type="checkbox"
+              class="input-checkbox"
+            />Assistant</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="intern"
+              type="checkbox"
+              class="input-checkbox"
+            />Intern</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="manager"
+              type="checkbox"
+              class="input-checkbox"
+            />Manager</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="sales"
+              type="checkbox"
+              class="input-checkbox"
+            />Sales</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="it-recruiter"
+              type="checkbox"
+              class="input-checkbox"
+            />It Recruiter</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="community-manager"
+              type="checkbox"
+              class="input-checkbox"
+            />Community Manager</label
+          >
+        </div>
+
+        <div class="form-group-file">
+            <p>Upload your cv:</p>
+            <input 
+            type="file" 
+            name="file" 
+            />
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group-button">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
